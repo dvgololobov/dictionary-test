@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <word-list v-show="words.length > 0" :items="words"></word-list>
+    <AlertBox v-show="words.length === 0">No search results</AlertBox>
   </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import WordList from '@/components/complex/wordList/word-list'
+import AlertBox from '@/components/global/AlertBox'
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+  components: { AlertBox, WordList },
+  computed: {
+    words () {
+      return this.$store.getters.foundedWords
+    }
   }
 }
 </script>

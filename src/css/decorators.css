@@ -1,0 +1,15 @@
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-italic {
+    font-style: italic;
+}
+.rounded {
+    border-radius: 0.3rem;
+}
