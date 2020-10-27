@@ -1,5 +1,9 @@
 # dictionary
 
+## .ENV FILE
+- VUE_APP_API_HOST -  api host (https://wordsapiv1.p.rapidapi.com)
+- VUE_APP_API_KEY - api key
+
 ## Project setup
 ```
 npm install
